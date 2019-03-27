@@ -1,16 +1,16 @@
-import firebase from 'firebase'
-import firestore from 'firebase/firestore'
+import firebase from 'firebase/app'
+import 'firebase/firebase-firestore'
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyAwwUBkWANZUqNrbBuQ-1wBRRuzzYnyo1g",
-    authDomain: "blackfriday-783ff.firebaseapp.com",
-    databaseURL: "https://blackfriday-783ff.firebaseio.com",
-    projectId: "blackfriday-783ff",
-    storageBucket: "blackfriday-783ff.appspot.com",
-    messagingSenderId: "918316474545"
+    apiKey: "ishjdhfksdjvhsdfdjhksdfds",
+    authDomain: "asdsadasddd-783ff.firebaseapp.com",
+    databaseURL: "testedevelop.firebaseio.com",
+    projectId: "testedevelop-783ff",
+    storageBucket: "testedevelop-783ff.appspot.com",
+    messagingSenderId: "9999864674545"
 };
 
-const firebaseApp =  firebase.initializeApp(config);
-firebaseApp.firestore().settings({timestampsInSnapshots: true})
+
+const firebaseApp = firebase.initializeApp(config);
 
 export default firebaseApp.firestore()
